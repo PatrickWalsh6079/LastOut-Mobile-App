@@ -1,0 +1,35 @@
+{
+  "expo": {
+    "name": "Last One Out",
+    "slug": "LastOutApp",
+	"icon": "./images/icon.png",
+    "version": "1.0.0",
+    "extra": {
+      "eas": {
+        "projectId": "4e43af4d-7fef-43dd-9e2d-88dc8b63bbad"
+      }
+    },
+    "android": {
+	  "package": "com.patrick.walsh6079.lastoutmobileapp",
+	  "permissions": [
+		"ACCESS_FINE_LOCATION",
+		"ACCESS_COARSE_LOCATION",
+		"ACCESS_BACKGROUND_LOCATION"
+	  ],
+	  "icon": "./images/icon.png",
+	  "adaptiveIcon": {
+		"foregroundImage": "./images/icon.png",
+		"backgroundColor": "#FFFFFF"
+	  }
+	},
+    "ios": {
+      "bundleIdentifier": "com.patrick.walsh6079.lastoutmobileapp",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "This app uses your location to track when you enter or leave a building.",
+        "NSLocationAlwaysUsageDescription": "This app uses your location in the background to check if you’re the last one inside a building."
+      }
+    },
+    "platforms": ["ios", "android"],
+    "newArchEnabled": true
+  }
+}
